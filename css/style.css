@@ -43,6 +43,7 @@ ol {
     --black-color: #000;
     --primary-font: 'Roboto', sans-serif;
     --secondry-font: 'Quicksand', sans-serif;
+    --dark-bg: rgba(0,0,0,0.7);
 }
 
 html {
@@ -173,7 +174,7 @@ p {
 }
 
 .counter-section h2,
-.testimonial-section h2,
+.reviews-section h2,
 .book-food-text h2 {
     color: var(--white-color);
 }
@@ -365,16 +366,76 @@ explore food section Design
 }
 
 
+
 /*
 ============================
-testimonial section section Design
+gallery section Design
 ============================
 */
-.testimonial-section{
+
+.gallery .gallery-container{
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin: 2.5rem;
+}
+
+.gallery .gallery-container .col-lg-4 {
+    position: relative; 
+    display: flex;
+    padding-bottom: 2rem;
+}
+.gallery .gallery-container .box{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.gallery .gallery-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+.gallery .gallery-container .box .icon{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: var(--dark-bg);
+    border-radius: 1rem;
+}
+
+.gallery .gallery-container .box .icon i{
+    font-size: 6rem;
+    color: var(--white-color);
+}
+
+.gallery .gallery-container .box:hover .icon{
+    display: flex;
+    border-radius: 1rem;
+}
+
+
+
+/*
+============================
+reviews section section Design
+============================
+*/
+.reviews-section{
     background-color: var(--primary-color);
 }
 
-.testimonial-section .carousel-item{
+.reviews-section .carousel-item{
     margin-top: 3rem;
     padding: 10rem 3.125rem;
     background-color: var(--white-color);
@@ -382,21 +443,21 @@ testimonial section section Design
     text-align: center;
 }
 
-.testimonial-section .carousel-caption img{
+.reviews-section .carousel-caption img{
     max-width: 5rem;
     border-radius: 50%;
     padding: 0.3125rem;
 }
 
-.testimonial-section .carousel-item .carousel-caption p{
+.reviews-section .carousel-item .carousel-caption p{
     font-size: 1.3125rem;
     line-height: 2.0625rem;
     padding: 0 11% 0.625rem;
 }
-.testimonial-section .carousel-indicators{
+.reviews-section .carousel-indicators{
     bottom: -2.8125rem;
 }
-.testimonial-section .carousel-indicators button{
+.reviews-section .carousel-indicators button{
     width: 15px;
     height: 15px;
     outline: none;
@@ -406,7 +467,54 @@ testimonial section section Design
     opacity: 0.2;
 }
 
-.testimonial-section .carousel-indicators button.active{
+.reviews-section .carousel-indicators button.active{
     opacity: 1;
 }
 
+
+/*
+============================
+faq design
+============================
+*/
+.faq h4 span{
+    color: var(--primary-color);
+    font-size: 1.875rem;
+    margin-right: 0.3125rem;
+}
+
+.book-food{
+    width: 100%;
+    background: url('../images/bg-3.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 71.9125px;
+    padding: 4.375rem 0;
+}
+
+
+/*
+============================
+footer design
+============================
+*/
+.footer{
+    background: var(--primary-color);
+}
+
+.footer .footer-link{
+    font-size: 1rem;
+    color: var(--white-color);
+    padding: 0 1.875rem;
+}
+
+.footer .footer-link:hover{
+    color: var(--white-color) !important;
+}
+
+.footer a i{
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 0 1rem;
+
+}
