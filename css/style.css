@@ -15,13 +15,16 @@
     outline-offset: 0;
 }
 
-a,
+/* a,
 a:hover {
     text-decoration: none;
-}
+} */
 
-a:hover {
-    color: var(--primary-color);
+a, a:hover {
+    color: var(--secondry-color);
+    font-weight: bolder;
+    font-size: large;
+    font-style: italic
 }
 
 ul,
@@ -34,16 +37,17 @@ ol {
 /* ===== Variable Define ===== */
 
 :root {
-    --primary-color: #085a08;
-    --secondry-color: #25138b;
+    --primary-color: #127712;
+    --secondry-color: #1d098f;
     --third-color: #691026;
     --white-color: #fff;
     --text-color: #555;
+    --text-box:#e9d6d6;
     --text-gray: #999;
     --black-color: #000;
-    --primary-font: 'Roboto', sans-serif;
-    --secondry-font: 'Quicksand', sans-serif;
-    --dark-bg: rgba(0,0,0,0.7);
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --secondry-font: Verdana, Geneva, Tahoma, sans-serif;
+    --dark-bg: rgba(0, 0, 0, 0.7);
 }
 
 html {
@@ -197,6 +201,7 @@ header design
 .navigation-wrap .nav-item {
     padding: 0 0.625rem;
     transition: all 200ms linear;
+    color: var(--primary-color);
 }
 
 .navbar-toggler:focus {
@@ -373,7 +378,7 @@ gallery section Design
 ============================
 */
 
-.gallery .gallery-container{
+.gallery .gallery-container {
     display: block;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 2rem;
@@ -381,11 +386,12 @@ gallery section Design
 }
 
 .gallery .gallery-container .col-lg-4 {
-    position: relative; 
+    position: relative;
     display: flex;
     padding-bottom: 2rem;
 }
-.gallery .gallery-container .box{
+
+.gallery .gallery-container .box {
     height: 100%;
     width: 100%;
     position: relative;
@@ -393,7 +399,7 @@ gallery section Design
     border-radius: 1rem;
 }
 
-.gallery .gallery-container .box img{
+.gallery .gallery-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -401,12 +407,13 @@ gallery section Design
     padding-bottom: 2rem;
 }
 
-.gallery .gallery-container .box .icon{
+.gallery .gallery-container .box .icon {
     display: none;
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 0; left: 0;
+    top: 0;
+    left: 0;
     z-index: 10;
     height: 100%;
     width: 100%;
@@ -414,12 +421,12 @@ gallery section Design
     border-radius: 1rem;
 }
 
-.gallery .gallery-container .box .icon i{
+.gallery .gallery-container .box .icon i {
     font-size: 6rem;
     color: var(--white-color);
 }
 
-.gallery .gallery-container .box:hover .icon{
+.gallery .gallery-container .box:hover .icon {
     display: flex;
     border-radius: 1rem;
 }
@@ -431,11 +438,11 @@ gallery section Design
 reviews section section Design
 ============================
 */
-.reviews-section{
+.reviews-section {
     background-color: var(--primary-color);
 }
 
-.reviews-section .carousel-item{
+.reviews-section .carousel-item {
     margin-top: 3rem;
     padding: 10rem 3.125rem;
     background-color: var(--white-color);
@@ -443,21 +450,23 @@ reviews section section Design
     text-align: center;
 }
 
-.reviews-section .carousel-caption img{
+.reviews-section .carousel-caption img {
     max-width: 5rem;
     border-radius: 50%;
     padding: 0.3125rem;
 }
 
-.reviews-section .carousel-item .carousel-caption p{
+.reviews-section .carousel-item .carousel-caption p {
     font-size: 1.3125rem;
     line-height: 2.0625rem;
     padding: 0 11% 0.625rem;
 }
-.reviews-section .carousel-indicators{
+
+.reviews-section .carousel-indicators {
     bottom: -2.8125rem;
 }
-.reviews-section .carousel-indicators button{
+
+.reviews-section .carousel-indicators button {
     width: 15px;
     height: 15px;
     outline: none;
@@ -467,7 +476,7 @@ reviews section section Design
     opacity: 0.2;
 }
 
-.reviews-section .carousel-indicators button.active{
+.reviews-section .carousel-indicators button.active {
     opacity: 1;
 }
 
@@ -477,13 +486,13 @@ reviews section section Design
 faq design
 ============================
 */
-.faq h4 span{
+.faq h4 span {
     color: var(--primary-color);
     font-size: 1.875rem;
     margin-right: 0.3125rem;
 }
 
-.book-food{
+.book-food {
     width: 100%;
     background: url('../images/bg-3.png') no-repeat center;
     background-size: cover;
@@ -495,10 +504,10 @@ faq design
 
 /*
 ============================
-footer design
+footer design basic-1
 ============================
 */
-.footer{
+/* .footer{
     background: var(--primary-color);
 }
 
@@ -517,4 +526,159 @@ footer design
     color: var(--primary-color);
     padding: 0 1rem;
 
+} */
+
+
+
+/* 
+============================
+footer design inspired from ewu 
+============================
+*/
+
+/* Footer Styles */
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-column h3 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 8px 0;
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+ul li a {
+    color: #e7f2ff;
+    text-decoration: none;
+}
+
+
+.footer-bottom {
+    border-top: 3px solid var(--white-color);
+    margin-top: 30px;
+    padding-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    forced-color-adjust: var(--white-color);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-logo-img {
+  width: 12rem;
+  height: 5rem;
+  margin-right: 10px;
+}
+
+
+
+/* CSS for Food Menu */
+.food-menu {
+    background-color: var(--white-color);
+    padding: 4% 0;
+}
+
+.food-menu-box {
+    width: 40%;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+    background-color: var(--text-box);
+    border-radius: 15px;
+}
+
+.food-menu-img {
+    width: 400px;
+    height: 250px;
+    float: left;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.food-menu-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* crop the image to fill the container without distortion */
+    display: block; /* remove inline spacing */
+}
+
+.food-menu-desc {
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-menu-desc h4{
+    margin-top: 1.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.food-price {
+    font-size: 1.2rem;
+    margin: 2% 0;
+    color: var(--third-color);
+}
+
+.food-detail {
+    font-size: 1rem;
+    color: var(--primary-color);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
 }
