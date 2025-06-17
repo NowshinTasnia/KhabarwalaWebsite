@@ -26,8 +26,13 @@
     }
 
     /* carousel design */
+    .reviews-section .carousel-item .carousel-caption p {
+        padding: 0;
+    }
 }
 
+/*===================================
+===================================*/
 
 @media (max-width: 767px) {
 
@@ -47,11 +52,35 @@
     }
 
     .navbar-brand img {
-        max-width: 120px; /* Adjust for mobile */
+        max-width: 120px;
+        /* Adjust for mobile */
     }
-    
+
     /* story section */
+    .story-section {
+        height: auto;
+        padding: 3rem 0;
+        ;
+    }
+
     /* carousel design */
+    .reviews-section .carousel-item {
+        padding: 11rem 3.125rem;
+    }
+
     /* newslettar */
     /* footer link */
+    .footer .footer-link,
+    .footer a i {
+        padding: 0 0.7rem;
+    }
+}
+
+
+@media (max-width:330px) {
+
+    /* carousel design */
+    .reviews-section .carousel-item {
+        padding: 13rem 3.1255rem;
+    }
 }
