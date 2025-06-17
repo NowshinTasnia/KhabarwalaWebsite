@@ -15,13 +15,16 @@
     outline-offset: 0;
 }
 
-a,
+/* a,
 a:hover {
     text-decoration: none;
-}
+} */
 
-a:hover {
-    color: var(--primary-color);
+a, a:hover {
+    color: var(--secondry-color);
+    font-weight: bolder;
+    font-size: large;
+    font-style: italic
 }
 
 ul,
@@ -34,16 +37,16 @@ ol {
 /* ===== Variable Define ===== */
 
 :root {
-    --primary-color: #085a08;
-    --secondry-color: #25138b;
+    --primary-color: #127712;
+    --secondry-color: #1d098f;
     --third-color: #691026;
     --white-color: #fff;
     --text-color: #555;
     --text-box:#e9d6d6;
     --text-gray: #999;
     --black-color: #000;
-    --primary-font: 'Roboto', sans-serif;
-    --secondry-font: 'Quicksand', sans-serif;
+    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --secondry-font: Verdana, Geneva, Tahoma, sans-serif;
     --dark-bg: rgba(0, 0, 0, 0.7);
 }
 
@@ -198,6 +201,7 @@ header design
 .navigation-wrap .nav-item {
     padding: 0 0.625rem;
     transition: all 200ms linear;
+    color: var(--primary-color);
 }
 
 .navbar-toggler:focus {
@@ -577,8 +581,6 @@ footer design inspired from ewu
 
 ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 ul li {
@@ -586,21 +588,19 @@ ul li {
 }
 
 ul li a {
-    color: #b0c4de;
+    color: #e7f2ff;
     text-decoration: none;
 }
 
-ul li a:hover {
-    text-decoration: underline;
-}
 
 .footer-bottom {
-    border-top: 1px solid #444;
+    border-top: 3px solid var(--white-color);
     margin-top: 30px;
     padding-top: 15px;
     text-align: center;
     font-size: 0.9em;
-    color: #ccc;
+    forced-color-adjust: var(--white-color);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .footer-logo-img {
@@ -663,4 +663,22 @@ ul li a:hover {
     color: var(--primary-color);
     font-family: 'Times New Roman', Times, serif;
     font-size: 1rem;
+}
+
+/* CSS for Food SEarch Section */
+
+.food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
 }
