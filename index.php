@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
     <title>Khabarwala</title>
+    <link rel="icon" href="images/bg-1.jpg">
 
     <!-- bootstrap CDN -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -49,6 +50,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="menu.html">Menu</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#faq">FAQ</a>
@@ -189,43 +193,47 @@
                     <div class="col-sm-12">
                         <div class="text-content text-center">
                             <h2>Explore Our Foods</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                                bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                                mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                                Separated they live in Bookmarksgrove.</p>
+                            <p>"One cannot think well, love well, sleep well, if one has not dined well." - Virginia
+                                Woolf</p>
+                            <p>"All you need is love. But a little chocolate now and then doesn't hurt." - Charles M.
+                                Schulz</p>
+                            <p>"The secret of success in life is to eat what you like and let the food fight it out
+                                inside." - Mark Twain</p>
+                            <p>"Cooking is like love. It should be entered into with abandon or not at all." - Harriet
+                                Van Horne</p>
                         </div>
                     </div>
                 </div>
                 <div class="row pt-5">
                     <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="images/food-2.png" class="img-fluid">
+                            <img src="images/food-7.png" class="img-fluid">
                             <div class="pt-3">
-                                <h4>Rainbow Vegetable Sandwich</h4>
-                                <p>Time: 15 - 20 Minutes | Serves: 1</p>
-                                <span>$10.20<del>$11.50</del></span>
+                                <h4>Vegetable Samosa</h4>
+                                <p>Time: 5 - 7 Minutes | Serves: 1</p>
+                                <span>$10.00<del>$20.00</del></span>
                                 <button class="mt-4 main-btn">Order Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="images/food-3.png" class="img-fluid">
+                            <img src="images/food-8.png" class="img-fluid">
                             <div class="pt-3">
-                                <h4>Vegetarian Burger</h4>
-                                <p>Time: 30 - 45 Minutes | Serves: 1</p>
-                                <span>$9.20<del>$10.50</del></span>
+                                <h4>Chicken Noodles Soup</h4>
+                                <p>Time: 10 - 15 Minutes | Serves: 1</p>
+                                <span>$50.00<del>$100.00</del></span>
                                 <button class="mt-4 main-btn">Order Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
                         <div class="card">
-                            <img src="images/food-4.png" class="img-fluid">
+                            <img src="images/food-9.png" class="img-fluid">
                             <div class="pt-3">
-                                <h4>French Toast</h4>
+                                <h4>Garlic Butter Steak</h4>
                                 <p>Time: 20 - 30 Minutes | Serves: 1</p>
-                                <span>$5.10<del>$10.50</del></span>
+                                <span>$200.00<del>$300.00</del></span>
                                 <button class="mt-4 main-btn">Order Now</button>
                             </div>
                         </div>
@@ -248,8 +256,26 @@
         <div class="gallery-container">
             <div class="row">
                 <div class="col-lg-4">
-                    <a href="images/food-5.png" class="box">
-                        <img src="images/food-5.png" alt="">
+                    <a href="images/food-1.png" class="box">
+                        <img src="images/food-1.png" alt="">
+                        <div class="icon"><i class="fas fa-plus"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/food-2.png" class="box">
+                        <img src="images/food-2.png" alt="">
+                        <div class="icon"><i class="fas fa-plus"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/food-3.png" class="box">
+                        <img src="images/food-3.png" alt="">
+                        <div class="icon"><i class="fas fa-plus"></i></div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="images/food-4.png" class="box">
+                        <img src="images/food-4.png" alt="">
                         <div class="icon"><i class="fas fa-plus"></i></div>
                     </a>
                 </div>
@@ -260,26 +286,8 @@
                     </a>
                 </div>
                 <div class="col-lg-4">
-                    <a href="images/food-5.png" class="box">
-                        <img src="images/food-5.png" alt="">
-                        <div class="icon"><i class="fas fa-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="images/food-5.png" class="box">
-                        <img src="images/food-5.png" alt="">
-                        <div class="icon"><i class="fas fa-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="images/food-5.png" class="box">
-                        <img src="images/food-5.png" alt="">
-                        <div class="icon"><i class="fas fa-plus"></i></div>
-                    </a>
-                </div>
-                <div class="col-lg-4">
-                    <a href="images/food-5.png" class="box">
-                        <img src="images/food-5.png" alt="">
+                    <a href="images/food-6.png" class="box">
+                        <img src="images/food-6.png" alt="">
                         <div class="icon"><i class="fas fa-plus"></i></div>
                     </a>
                 </div>
@@ -335,24 +343,27 @@
                                 <div class="carousel-item active">
                                     <div class="carousel-caption">
                                         <img src="images/man-1.png">
-                                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and
-                                            Consonantia, there live the blind texts. "</p>
+                                        <p>"This dish is like a journey—simple yet full of layers.
+                                            Every bite brings something new, balanced, and harmonious.
+                                            It’s comforting, yet thought-provoking."</p>
                                         <h5>Kim Namjoon - Rapper</h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption">
                                         <img src="images/man-2.png">
-                                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and
-                                            Consonantia, there live the blind texts. "</p>
+                                        <p>"This dish is amazing! The flavors hit just right—so bold,
+                                            yet smooth. It’s super comforting but exciting at the same time.
+                                            Definitely love it!"</p>
                                         <h5>Kim Taehyung - Visual</h5>
                                     </div>
                                 </div>
                                 <div class="carousel-item">
                                     <div class="carousel-caption">
                                         <img src="images/man-3.png">
-                                        <p>"Far far away, behind the word mountains, far from the countries Vokalia and
-                                            Consonantia, there live the blind texts. "</p>
+                                        <p>"This dish is like a beautiful painting—every bite is a new color,
+                                            blending perfectly. It’s elegant, yet so warm and inviting.
+                                            Really unforgettable."</p>
                                         <h5>Jeon Jungkook - Main Vocalist</h5>
                                     </div>
                                 </div>
@@ -428,8 +439,8 @@
     </section>
 
 
-    <!-- section-8 footer -->
-    <footer id="footer">
+    <!-- section-8 footer basic-1 -->
+    <!-- <footer id="footer">
         <div class="footer py-5">
             <div class="container">
                 <div class="row">
@@ -456,9 +467,159 @@
                 </div>
             </div>
         </div>
+    </footer> -->
+
+
+    <!-- footer inspired from ewu -->
+    <footer class="footer">
+        <div class="footer-top">
+            <img src="images/logobg.jpg" class="footer-logo-img" />
+        </div>
+        <div class="footer-container">
+            <div class="footer-column contact-info">
+                <h3>khabarwala</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Reservation</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                </ul>
+                <!-- <p>8 A/2, Jahurul Islam Avenue<br>
+                    Jahurul Islam City, Aftabnagar<br>
+                    Dhaka-1212, Bangladesh</p>
+                <p>
+                    <strong>Phone:</strong> 09666775557, Ext. - 234<br>
+                    <strong>Mobile:</strong> +8801755587224, +8801851933094 (Hotline)
+                </p>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:admissions@ewubd.edu">admissions@ewubd.edu</a><br>
+                    <a href="mailto:info@ewubd.edu">info@ewubd.edu</a>
+                </p> -->
+            </div>
+            <div class="footer-column student">
+                <h3>contact info</h3>
+                <ul>
+                    <li><i class="fa fa-map-marker-alt me-3"></i>Dhanmondi, Dhaka 1204</li>
+                    <li><i class="fa fa-phone-alt me-3"></i>+880 1234 678 910</li>
+                    <li><i class="fa fa-envelope me-3"></i>khabarwala@khabar.com</li>
+                </ul>
+            </div>
+            <div class="footer-column university">
+                <h3>opening hours</h3>
+                <ul>
+                    <li style="font-weight: bold;">Sunday - Thursday</li>
+                    <li><i class="me-3"></i>10:00 AM - 10:00 PM</li>
+                    <li style="font-weight: bold;">Friday - Saturday</li>
+                    <li><i class="me-3"></i>10:00 AM - 5:00 PM</li>
+                </ul>
+            </div>
+            <div class="footer-column quick-links">
+                <h3>quick links</h3>
+                <ul>
+                    <li><i class="fab fa-twitter me-3"></i><a
+                            href="https://twitter.com/khabarwala">www.twitter.com/Khabarwala</a></li>
+                    <li><i class="fab fa-facebook-f me-3"></i><a
+                            href="https://facebook.com/khabarwala">www.facebook.com/Khabarwala</a></li>
+                    <li><i class="fab fa-youtube me-3"></i><a
+                            href="https://youtube.com/khabarwala">www.youtube.com/Khabarwala</a></li>
+                    <li><i class="fab fa-linkedin-in me-3"></i><a
+                            href="https://linkedin.com/in/khabarwala">www.linkedin.com/in/Khabarwala</a></li>
+                    <li><i class="fab fa-telegram me-3"></i><a
+                            href="https://telegram.com/khabarwala">www.telegram.com/Khabarwala</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Developed and maintained by ICS, EWU | Copyright &copy; 2022 East West University</p>
+            <p>179,394,979 Total view | 17,044,430 Views Today</p>
+        </div>
     </footer>
 
 
+
+    <!-- another footer style 1 -->
+    <!-- <section>
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeInUp">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4>company</h4>
+                        <a href="" class="btn btn-link">About</a>
+                        <a href="" class="btn btn-link">Connect Us</a>
+                        <a href="" class="btn btn-link">Reservation</a>
+                        <a href="" class="btn btn-link">Privacy Policy</a>
+                        <a href="" class="btn btn-link">Terms & Conditions</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+    <!-- another footer style 2 -->
+    <!-- <section>
+        <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeInUp">
+            <div class="container py-5">
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4> <a
+                            href="" class="btn btn-link">About Us</a>
+                        <a href="" class="btn btn-link">Contact Us</a>
+                        <a href="" class="btn btn-link">Resevation</a>
+                        <a href="" class="btn btn-link">Privacy Policy</a>
+                        <a href="" class="btn btn-link">Teams & Condition</a>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contect</h4>
+                        <p class="mb-2'><i class=" fa fa-map-marker-alt"></i>123 Strat, New York, USA</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt"></i>+012 345 654410</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>Info@example.com</p>
+                        <div class="d-flex pt-2">
+                            <a href="" class="btn btn-outline-light btn-social "><i class="fab fa-twitter"></i></a> <a
+                                href="" class="btn btn-outline-light btn-social "><i class="fab fa-facebook-f"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social "><i class="fab fa-youtube"></i></a>
+                            <a href="" class="btn btn-outline-light btn-social "><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
+                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
+                        <p>09M - 09PM</p>
+                        <h5 class="text-light fw-normal"> Sunday</h5>
+                        <p>10AM
+                    </div>
+                    08PM</p>
+                    <div class="col-lg-3 col-md-6">
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis, totam.</p>
+                        <div class="position-relative mx-auto ">
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text">
+                            <button class="btn btn-primary py-2 position-absolute top-0 end-0 me-2">SingUp</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row">
+                        <div class="col-md-6 text-center mb-3 mb-md-6 col-lg-12">
+                            &copy; <a class="border-bottom" href="">Your Site Name, All right Reserved </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+
+
+    <!-- ================================================================= -->
+    <!-- ===================         J S     ============================= -->
+    <!-- ================================================================= -->
 
     <!-- OWN JS -->
     <script src="js/script.js"></script>
