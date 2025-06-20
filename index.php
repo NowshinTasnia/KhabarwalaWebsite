@@ -356,32 +356,28 @@
                 </div>
                 <div class="row pt-5">
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>What types of cuisines does your website offer recipes for?</h4>
+                        <p>We offer a wide range of recipes from various global cuisines, including Italian, Mexican,
+                            Asian, Mediterranean, and more. Our goal is to provide something for every taste and dietary
+                            preference, whether you're a beginner or an experienced cook.</p>
                     </div>
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>How can I filter recipes based on my dietary restrictions?</h4>
+                        <p>You can use our advanced search filters to find recipes that suit your dietary needs. Whether
+                            you're gluten-free, vegan, keto, or have other preferences, we make it easy to discover
+                            recipes that fit your lifestyle and tastes.</p>
                     </div>
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>Can I submit my own recipes to your website?</h4>
+                        <p>Yes! We encourage food enthusiasts to share their recipes with our community. Simply visit
+                            the "Submit Recipe" section, fill out the form, and provide the necessary details. Our team
+                            will review and publish it for others to enjoy.</p>
                     </div>
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>Do you offer nutritional information for your recipes?</h4>
+                        <p>Yes, we include detailed nutritional information for most recipes. Each recipe comes with
+                            calorie counts, macronutrient breakdowns, and serving sizes to help you make informed
+                            choices and meet your health goals.</p>
                     </div>
                 </div>
             </div>
