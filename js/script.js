@@ -9,6 +9,14 @@ window.onscroll = function () {
     I
 }
 
+//dateTime show
+function updateDateTime() {
+    const now = new Date();
+    const formatted = now.toLocaleString();
+    document.getElementById('datetime').textContent = formatted;
+}
+updateDateTime();
+setInterval(updateDateTime, 1000);
 
 // nav hide
 let navBar = document.querySelectorAll('.nav-link');

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand:wght@300; 400; 500; 600; 700&family=Roboto: wght@100; 300; 400; 500; 700; 900&display=swap');
 
-*:after,
-*:before {
-    -webkit-box-sizing: border-box;
+*,
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -14,11 +14,6 @@
     outline: 0 !important;
     outline-offset: 0;
 }
-
-/* a,
-a:hover {
-    text-decoration: none;
-} */
 
 a, a:hover {
     color: var(--secondry-color);
@@ -45,9 +40,9 @@ ol {
     --text-box:#e9d6d6;
     --text-gray: #999;
     --black-color: #000;
-    --primary-font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --secondry-font: Verdana, Geneva, Tahoma, sans-serif;
-    --dark-bg: rgba(0, 0, 0, 0.7);
+    --primary-font: 'Segoe UI', tahoma, geneva, verdana, sans-serif;
+    --secondry-font: verdana, geneva, tahoma, sans-serif;
+    --dark-bg: #000;
 }
 
 html {
@@ -68,7 +63,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: var (--white-color);
+    background: var(--white-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -79,7 +74,6 @@ body {
 /* ============= custom css design ============ */
 
 h1 {
-
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 3rem;
@@ -87,18 +81,17 @@ h1 {
 }
 
 h2 {
-
     font-weight: 700;
     font-size: 2.25rem;
     text-transform: capitalize;
-    font-family: var (--secondry-font);
+    font-family: var(--secondry-font);
     color: var(--secondry-color);
     line-height: 3rem;
 }
 
 h4 {
     color: var(--secondry-color);
-    font-family: var (--secondry-font);
+    font-family: var(--secondry-font);
     text-transform: capitalize;
     font-size: 18px;
     font-weight: 800;
@@ -108,7 +101,7 @@ h4 {
 h5 {
     color: var(--primary-color);
     text-transform: capitalize;
-    font-family: var (--secondry-font);
+    font-family: var(--secondry-font);
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -120,6 +113,7 @@ p {
     font-weight: 400;
     line-height: 1.75rem;
     letter-spacing: 1px;
+    text-align: justify;
 }
 
 .main-btn {
@@ -132,31 +126,25 @@ p {
     font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
-    box-shadow: 0px 2px 10px -1px rgb(e e e / 19%);
-    -webkit-transition: all .4s ease-out 0s;
-    -o-transition: all .4s ease-out 0s;
-    -moz-transition: all .4s ease-out es;
-    transition: all .4s ease-out es;
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
+    transition: all .4s ease-out 0s;
 }
 
 .white-btn {
     padding: 0.625rem 1.875rem;
     line-height: 25px;
     background-color: var(--white-color);
-    border: 0.1875 rem solid var (--white-color);
+    border: 0.1875 rem solid var(--white-color);
     color: var(--text-color);
     font-size: 0.9375rem;
     font-weight: 600;
     text-transform: capitalize;
-    box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
-    -webkit-transition: all .4s ease-out 0s;
-    -o-transition: all .4s ease-out 0s;
-    -moz-transition: all .4s ease-out 0s;
+    box-shadow: 0 2px 10px -1px rgb(0 0 0 / 19%);
     transition: all .4s ease-out 0s;
 }
 
 .main-btn:hover {
-    background-color: transparent;
+    background-color: var(--text-box);
     color: var(--primary-color);
     border-color: var(--primary-color);
 }
@@ -164,7 +152,7 @@ p {
 .white-btn:hover {
     background-color: transparent;
     color: var(--primary-color);
-    border-color: var (--primary-color);
+    border-color: var(--white-color);
 }
 
 .wrapper {
@@ -188,13 +176,16 @@ p {
 header design
 ============================
 */
+.header{
+    position: absolute;
+    background-color: var(--text-color);
+}
 
 .navigation-wrap {
     position: fixed;
     width: 100%;
     left: 0;
     z-index: 1000;
-    -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 
@@ -236,8 +227,8 @@ header design
     top: 0;
     left: 0;
     width: 100%;
-    background: var (--white-color);
-    box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.9);
+    background: var(--white-color);
+    box-shadow: 0 0.125rem 1.75rem 0 var(--text-gray);
     transition: all .15s ease-in-out 0s;
 }
 
@@ -250,6 +241,7 @@ top-banner Design
 
 .top-banner {
     width: 100%;
+
     /* background: url('../images/bg-1.jpg') no-repeat center; */
     background-size: 50%;
     padding: 16.875rem 0 9.375rem;
@@ -278,7 +270,7 @@ about section Design
 ============================
 */
 .about-section {
-    background: var (--white-color);
+    background: var(--white-color);
 }
 
 .about-section .card,
@@ -313,7 +305,7 @@ food type section Design
     left: -2.1875rem;
     color: var(--primary-color);
     font-size: 1.25rem;
-    font-family: "Font Awesome 5 Free";
+    font-family: var(--secondry-font);
     content: '\feec';
     display: inline-block;
     padding-right: 3px;
@@ -334,7 +326,7 @@ food type section Design
     color: var(--primary-color);
 }
 
-.card img {
+.about-section .card img {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -360,78 +352,15 @@ explore food section Design
     display: block;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var (--primary-color);
+    color: var(--primary-color);
     padding-bottom: 1rem;
     border-bottom: 0.0625rem solid #eee;
 }
 
 .explore-food .card span del {
-    color: var-text-gray;
+    color: var(text-gray);
     margin-left: 0.5rem;
 }
-
-
-
-/*
-============================
-gallery section Design
-============================
-*/
-
-.gallery .gallery-container {
-    display: block;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    gap: 2rem;
-    margin: 2.5rem;
-}
-
-.gallery .gallery-container .col-lg-4 {
-    position: relative;
-    display: flex;
-    padding-bottom: 2rem;
-}
-
-.gallery .gallery-container .box {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    border-radius: 1rem;
-}
-
-.gallery .gallery-container .box img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 1rem;
-    padding-bottom: 2rem;
-}
-
-.gallery .gallery-container .box .icon {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: 100%;
-    width: 100%;
-    background: var(--dark-bg);
-    border-radius: 1rem;
-}
-
-.gallery .gallery-container .box .icon i {
-    font-size: 6rem;
-    color: var(--white-color);
-}
-
-.gallery .gallery-container .box:hover .icon {
-    display: flex;
-    border-radius: 1rem;
-}
-
-
 
 /*
 ============================
@@ -480,16 +409,75 @@ reviews section section Design
     opacity: 1;
 }
 
+/*
+============================
+gallery section Design
+============================
+*/
+
+.gallery .gallery-container {
+    display: block;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    margin: 2.5rem;
+}
+
+.gallery .gallery-container .col-lg-4 {
+    position: relative;
+    display: flex;
+    padding-bottom: 2rem;
+}
+
+.gallery .gallery-container .box {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+.gallery .gallery-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    padding-bottom: 2rem;
+}
+
+.gallery .gallery-container .box .icon {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: 100%;
+    width: 100%;
+    background: #151615b3;
+    border-radius: 1rem;
+}
+
+.gallery .gallery-container .box .icon i {
+    font-size: 6rem;
+    color: var(--white-color);
+}
+
+.gallery .gallery-container .box:hover .icon {
+    display: flex;
+    border-radius: 1rem;
+}
 
 /*
 ============================
 faq design
 ============================
 */
-.faq h4 span {
+.faq .h4 span {
     color: var(--primary-color);
     font-size: 1.875rem;
     margin-right: 0.3125rem;
+    text-align: justify;
 }
 
 .book-food {
@@ -507,6 +495,7 @@ faq design
 footer design basic-1
 ============================
 */
+
 /* .footer{
     background: var(--primary-color);
 }
@@ -566,7 +555,7 @@ footer design inspired from ewu
     padding-bottom: 5px;
 }
 
-.contact-info p {
+.contact-info {
     margin: 8px 0;
 }
 
@@ -583,13 +572,13 @@ ul {
     list-style: none;
 }
 
-ul li {
+.footer-container ul li {
     margin: 8px 0;
 }
 
-ul li a {
-    color: #e7f2ff;
-    text-decoration: none;
+.footer-container .footer-column ul li a {
+    color: var(--white-color);
+    text-align: center;
 }
 
 
@@ -601,6 +590,11 @@ ul li a {
     font-size: 0.9em;
     forced-color-adjust: var(--white-color);
     font-family: 'Courier New', Courier, monospace;
+}
+
+.footer-bottom p{
+    text-align: center;
+    color: var(--white-color);
 }
 
 .footer-logo-img {
@@ -634,11 +628,12 @@ ul li a {
     border-radius: 10px;
 }
 
-.food-menu-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* crop the image to fill the container without distortion */
-    display: block; /* remove inline spacing */
+.food-menu-img img{
+    border-radius: 0;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
 }
 
 .food-menu-desc {
@@ -662,13 +657,12 @@ ul li a {
     font-size: 1rem;
     color: var(--primary-color);
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1rem;
 }
 
 /* CSS for Food SEarch Section */
 
 .food-search{
-    background-image: url(../images/bg.jpg);
+    background-image: url("../images/bg-2.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
