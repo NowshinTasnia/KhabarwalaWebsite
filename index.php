@@ -29,7 +29,7 @@
     <!-- header design -->
 
     <!-- header includes -->
-    <?php include('header.php'); ?>
+    <?php include'header.php'; ?>
 
 
     <!-- section-1 top-banner -->
@@ -151,7 +151,6 @@
         </div>
     </section>
 
-
     <!-- section-4 explore food-->
     <section id="explore-food">
         <div class="explore-food wrapper">
@@ -209,8 +208,60 @@
             </div>
         </div>
     </section>
-
-
+    
+    <!-- Section-5 reviews-->
+    <section id="reviews">
+        <div class="wrapper reviews-section">
+            <div class="container text-center">
+                <div class="text-center pb-4">
+                    <h2>reviews</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-10 offset-lg-1">
+                        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption">
+                                        <img src="images/man-1.png">
+                                        <p>"This dish is like a journey—simple yet full of layers.
+                                            Every bite brings something new, balanced, and harmonious.
+                                            It’s comforting, yet thought-provoking."</p>
+                                        <h5>Kim Namjoon - Rapper</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img src="images/man-2.png">
+                                        <p>"This dish is amazing! The flavors hit just right—so bold,
+                                            yet smooth. It’s super comforting but exciting at the same time.
+                                            Definitely love it!"</p>
+                                        <h5>Kim Taehyung - Visual</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img src="images/man-3.png">
+                                        <p>"This dish is like a beautiful painting—every bite is a new color,
+                                            blending perfectly. It’s elegant, yet so warm and inviting.
+                                            Really unforgettable."</p>
+                                        <h5>Jeon Jungkook - Main Vocalist</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- section gallery  -->
     <section class="gallery" id="gallery">
@@ -288,60 +339,6 @@
 
 
 
-    <!-- Section-5 reviews-->
-    <section id="reviews">
-        <div class="wrapper reviews-section">
-            <div class="container text-center">
-                <div class="text-center pb-4">
-                    <h2>reviews</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-10 offset-lg-1">
-                        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="carousel-caption">
-                                        <img src="images/man-1.png">
-                                        <p>"This dish is like a journey—simple yet full of layers.
-                                            Every bite brings something new, balanced, and harmonious.
-                                            It’s comforting, yet thought-provoking."</p>
-                                        <h5>Kim Namjoon - Rapper</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <img src="images/man-2.png">
-                                        <p>"This dish is amazing! The flavors hit just right—so bold,
-                                            yet smooth. It’s super comforting but exciting at the same time.
-                                            Definitely love it!"</p>
-                                        <h5>Kim Taehyung - Visual</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <img src="images/man-3.png">
-                                        <p>"This dish is like a beautiful painting—every bite is a new color,
-                                            blending perfectly. It’s elegant, yet so warm and inviting.
-                                            Really unforgettable."</p>
-                                        <h5>Jeon Jungkook - Main Vocalist</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
     <!-- Section-6 faq-->
     <section id="faq">
@@ -356,32 +353,28 @@
                 </div>
                 <div class="row pt-5">
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>What types of cuisines does your website offer recipes for?</h4>
+                        <p>We offer a wide range of recipes from various global cuisines, including Italian, Mexican,
+                            Asian, Mediterranean, and more. Our goal is to provide something for every taste and dietary
+                            preference, whether you're a beginner or an experienced cook.</p>
                     </div>
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>How can I filter recipes based on my dietary restrictions?</h4>
+                        <p>You can use our advanced search filters to find recipes that suit your dietary needs. Whether
+                            you're gluten-free, vegan, keto, or have other preferences, we make it easy to discover
+                            recipes that fit your lifestyle and tastes.</p>
                     </div>
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>Can I submit my own recipes to your website?</h4>
+                        <p>Yes! We encourage food enthusiasts to share their recipes with our community. Simply visit
+                            the "Submit Recipe" section, fill out the form, and provide the necessary details. Our team
+                            will review and publish it for others to enjoy.</p>
                     </div>
                     <div class="col-sm-6 mb-4">
-                        <h4><span>~</span>is khabarwala's bread really baked fresh each day?</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
-                            Separated they live in Bookmarksgrove.</p>
+                        <h4><span>~ </span>Do you offer nutritional information for your recipes?</h4>
+                        <p>Yes, we include detailed nutritional information for most recipes. Each recipe comes with
+                            calorie counts, macronutrient breakdowns, and serving sizes to help you make informed
+                            choices and meet your health goals.</p>
                     </div>
                 </div>
             </div>

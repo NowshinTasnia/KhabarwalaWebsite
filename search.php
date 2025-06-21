@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="Description" content="Enter your description here" />
     <title>Khabarwala</title>
-    <link rel="icon" href="images/bg-1.jpg">
+    <link rel="icon" href="../images/bg-1.jpg">
 
     <!-- bootstrap CDN -->
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
@@ -16,8 +16,8 @@
 
 
     <!-- OWN CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/responsive-style.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive-style.css">
 
     <!-- default css -->
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
