@@ -1,8 +1,6 @@
-@media (max-width: 991px) {
-
-    /*custom classes */
+@media (width <= 991px) {
+    /* custom classes */
     .text-content {
-
         width: 100%;
     }
 
@@ -17,12 +15,12 @@
     }
 
     .navigation-wrap .nav-link {
-        line-height: 1.875 rem;
+        line-height: 1.875rem;
     }
 
     /* Banner Design */
     .top-banner {
-        padding: 9.375rem 0 9.375rem;
+        padding: 9.375rem 0;
     }
 
     /* carousel design */
@@ -31,11 +29,10 @@
     }
 }
 
-/*===================================
-===================================*/
+/* ===================================
+=================================== */
 
-@media (max-width: 767px) {
-
+@media (width <= 767px) {
     /* custom css */
     h1 {
         font-size: 2.8rem;
@@ -48,11 +45,12 @@
 
     /* top banner */
     .top-banner {
-        padding: 10.875 rem e 9.375rem;
+        padding: 10.875rem 9.375rem;
     }
 
     .navbar-brand img {
         max-width: 120px;
+
         /* Adjust for mobile */
     }
 
@@ -69,7 +67,8 @@
     }
 
     /* newslettar */
-    /* footer link basic-1*/
+
+    /* footer link basic- 1 */
     .footer .footer-link,
     .footer a i {
         padding: 0 0.7rem;
@@ -77,8 +76,7 @@
 }
 
 
-@media (max-width:330px) {
-
+@media (width <=330px) {
     /* carousel design */
     .reviews-section .carousel-item {
         padding: 13rem 3.1255rem;

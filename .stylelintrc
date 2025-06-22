@@ -1,0 +1,13 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "block-no-empty": true,
+    "color-no-invalid-hex": true,
+    "no-descending-specificity": null,
+    "declaration-block-no-duplicate-properties": true,
+    "property-no-unknown": true,
+    "value-no-vendor-prefix": true,
+    "property-no-vendor-prefix": true,
+    "font-family-no-missing-generic-family-keyword": true
+  }
+}

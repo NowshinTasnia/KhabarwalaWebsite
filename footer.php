@@ -81,6 +81,7 @@
     <div class="footer-bottom">
         <p>Developed and maintained by NOWSHIN TASNIA | Copyright &copy; | 2025 All Rights Reserved</p>
         <p>179,394,979 Total view | 7,044,430 Views Today</p>
+        <p id="datetime"></p>
     </div>
 </footer>
 

@@ -25,45 +25,9 @@
 </head>
 
 <body>
-    <!-- header section Starts -->
-    <header style="background-color: white;">
-        <nav class="navbar navbar-expand-lg navigation-wrap">
-            <div class="container">
-                <a class="navbar-brand" href="#"><img src="images/logo.jpg"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-stream navbar-toggler-icon"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#explore-food">Explore Foods</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reviews">Reviews</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="menu.html">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#faq">FAQ</a>
-                        </li>
-                        <li><button class="main-btn">1200 345 123</button></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+    <?php include'header.php'; ?>
 
-    <?php include('search.php'); ?>
-
-    <!-- fOOD MEnu Section Starts Here -->
+    <!-- fOOD MEnu Section -->
     <section class="food-menu">
         <div class="container">
             <h2 class="text-center">Food Menu</h2>
@@ -211,16 +175,8 @@
             <div class="clearfix"></div>
         </div>
     </section>
-    <!-- fOOD Menu Section Ends Here -->
-
-
-    <!-- footer Section Starts Here -->
-    <!-- footer inspired from ewu -->
     
-    <?php include('footer.php'); ?>
-
-    <!-- footer Section Ends Here -->
-
+    <?php include'footer.php'; ?>
 
 
 

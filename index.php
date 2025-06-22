@@ -29,7 +29,7 @@
     <!-- header design -->
 
     <!-- header includes -->
-    <?php include('header.php'); ?>
+    <?php include'header.php'; ?>
 
 
     <!-- section-1 top-banner -->
@@ -151,7 +151,6 @@
         </div>
     </section>
 
-
     <!-- section-4 explore food-->
     <section id="explore-food">
         <div class="explore-food wrapper">
@@ -209,8 +208,60 @@
             </div>
         </div>
     </section>
-
-
+    
+    <!-- Section-5 reviews-->
+    <section id="reviews">
+        <div class="wrapper reviews-section">
+            <div class="container text-center">
+                <div class="text-center pb-4">
+                    <h2>reviews</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-10 offset-lg-1">
+                        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-caption">
+                                        <img src="images/man-1.png">
+                                        <p>"This dish is like a journey—simple yet full of layers.
+                                            Every bite brings something new, balanced, and harmonious.
+                                            It’s comforting, yet thought-provoking."</p>
+                                        <h5>Kim Namjoon - Rapper</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img src="images/man-2.png">
+                                        <p>"This dish is amazing! The flavors hit just right—so bold,
+                                            yet smooth. It’s super comforting but exciting at the same time.
+                                            Definitely love it!"</p>
+                                        <h5>Kim Taehyung - Visual</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-caption">
+                                        <img src="images/man-3.png">
+                                        <p>"This dish is like a beautiful painting—every bite is a new color,
+                                            blending perfectly. It’s elegant, yet so warm and inviting.
+                                            Really unforgettable."</p>
+                                        <h5>Jeon Jungkook - Main Vocalist</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- section gallery  -->
     <section class="gallery" id="gallery">
@@ -287,60 +338,6 @@
     </section>
 
 
-
-    <!-- Section-5 reviews-->
-    <section id="reviews">
-        <div class="wrapper reviews-section">
-            <div class="container text-center">
-                <div class="text-center pb-4">
-                    <h2>reviews</h2>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12 col-lg-10 offset-lg-1">
-                        <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <div class="carousel-caption">
-                                        <img src="images/man-1.png">
-                                        <p>"This dish is like a journey—simple yet full of layers.
-                                            Every bite brings something new, balanced, and harmonious.
-                                            It’s comforting, yet thought-provoking."</p>
-                                        <h5>Kim Namjoon - Rapper</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <img src="images/man-2.png">
-                                        <p>"This dish is amazing! The flavors hit just right—so bold,
-                                            yet smooth. It’s super comforting but exciting at the same time.
-                                            Definitely love it!"</p>
-                                        <h5>Kim Taehyung - Visual</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="carousel-caption">
-                                        <img src="images/man-3.png">
-                                        <p>"This dish is like a beautiful painting—every bite is a new color,
-                                            blending perfectly. It’s elegant, yet so warm and inviting.
-                                            Really unforgettable."</p>
-                                        <h5>Jeon Jungkook - Main Vocalist</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <!-- Section-6 faq-->
