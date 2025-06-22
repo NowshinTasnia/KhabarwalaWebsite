@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (width <= 991px) {
     /* custom classes */
     .text-content {
@@ -81,4 +82,89 @@
     .reviews-section .carousel-item {
         padding: 13rem 3.1255rem;
     }
+=======
+@media (width <= 991px) {
+    /* custom classes */
+    .text-content {
+        width: 100%;
+    }
+
+    /* navbar brand */
+    .navigation-wrap .navbar-brand img {
+        height: 3.8125rem;
+    }
+
+    .navigation-wrap {
+        text-align: center;
+        background-color: var(--white-color);
+    }
+
+    .navigation-wrap .nav-link {
+        line-height: 1.875rem;
+    }
+
+    /* Banner Design */
+    .top-banner {
+        padding: 9.375rem 0;
+    }
+
+    /* carousel design */
+    .reviews-section .carousel-item .carousel-caption p {
+        padding: 0;
+    }
+}
+
+/* ===================================
+=================================== */
+
+@media (width <= 767px) {
+    /* custom css */
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 2.0625rem;
+    }
+
+    /* top banner */
+    .top-banner {
+        padding: 10.875rem 9.375rem;
+    }
+
+    .navbar-brand img {
+        max-width: 120px;
+
+        /* Adjust for mobile */
+    }
+
+    /* story section */
+    .story-section {
+        height: auto;
+        padding: 3rem 0;
+        ;
+    }
+
+    /* carousel design */
+    .reviews-section .carousel-item {
+        padding: 11rem 3.125rem;
+    }
+
+    /* newslettar */
+
+    /* footer link basic- 1 */
+    .footer .footer-link,
+    .footer a i {
+        padding: 0 0.7rem;
+    }
+}
+
+
+@media (width <=330px) {
+    /* carousel design */
+    .reviews-section .carousel-item {
+        padding: 13rem 3.1255rem;
+    }
+>>>>>>> 06e69094460aec87bdfe51d6617d8802808db896
 }
