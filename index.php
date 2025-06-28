@@ -29,7 +29,7 @@
     <!-- header design -->
 
     <!-- header includes -->
-    <?php include'header.php'; ?>
+    <?php include 'header.php'; ?>
 
     <!-- section-1 top-banner -->
     <section id="home">
@@ -38,8 +38,9 @@
                 <div class="row">
                     <div class="col-lg-5 col-md-6">
                         <h1>Good food choices are good investments.</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum amet leo. </p>
+                        <p>Choosing nutritious food fuels your body, sharpens your mind, and boosts your mood—laying the
+                            foundation for a healthier, happier, and more energetic life. Invest in yourself with every
+                            meal! </p>
                         <div class="mt-4">
                             <button class="main-btn">Order now <i class="fa fa-shopping-basket ps-3"></i></button>
                             <button class="white-btn ms-lg-4 mt-lg-0 mt-4">Order now <i
@@ -53,7 +54,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- section-2 counter -->
     <section id="counter">
@@ -89,7 +89,6 @@
         </section>
     </section>
 
-
     <!-- section-3 about -->
     <section id="about">
         <div class="about-section wrapper">
@@ -102,8 +101,8 @@
                     </div>
                     <div class="col-lg-5 col-md-12 text-sec">
                         <h2>We pride ourselves on making real food from the best ingredients.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+                        <p>Our meals are crafted with care, using fresh, locally sourced ingredients that nourish your
+                            body and delight your taste buds—because you deserve only the best!</p>
                         <button class="main-btn mt-4">Learn More</button>
                     </div>
                 </div>
@@ -112,13 +111,12 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 col-md-12 text-sec mb-lg-0 mb-5">
                         <h2>We make everything by hand with the best possible ingredients.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                            bibendum in sit amet leo. Mauris feugiat erat tellus. Far far away, behind the word
-                            mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <p>We’re passionate about quality, ensuring that every bite is packed with flavor, care, and
+                            the dedication to providing you with an unforgettable experience.</p>
                         <ul class="list-unstyled py-3">
-                            <li>Etiam sed dolor ac diam volutpat. </li>
-                            <li>Erat volutpat aliquet imperdiet. </li>
-                            <li>purus a odio finibus bibendum.</li>
+                            <li>Handcrafted with care for a truly authentic taste. </li>
+                            <li>Dishes made with love, from our kitchen to you. </li>
+                            <li>Every bite carefully crafted for maximum enjoyment.</li>
                         </ul>
                         <button class="main-btn mt-4">Learn More</button>
                     </div>
@@ -139,10 +137,9 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <div class="text-content">
-                            <h2>When a man's stomach is full it makes no
-                                difference whether he is rich or poor.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et purus a odio finibus
-                                bibendum in sit amet leo. Mauris feugiat erat tellus.</p>
+                            <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+                            <p>True happiness comes from within—it's not about wealth, but finding contentment in the
+                                simple joys of life, like a satisfying meal shared with loved ones.</p>
                         </div>
                     </div>
                 </div>
@@ -207,7 +204,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Section-5 reviews-->
     <section id="reviews">
         <div class="wrapper reviews-section">
@@ -398,7 +395,7 @@
     </section>
 
     <!-- footer includes -->
-    <?php include'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
 
 
@@ -425,4 +422,5 @@
     <!-- <script src="js/bootstrap.min.js"></script> -->
 
 </body>
+
 </html>

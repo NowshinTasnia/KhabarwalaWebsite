@@ -10,7 +10,7 @@
             <div class="collapse navbar-collapse" id="navbarText">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About Us</a>
@@ -34,8 +34,8 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="menu.php">Menu</a></li>
-                            <li><a class="dropdown-item" href="#food-categories">Food Categories</a></li>
-                            <li><a class="dropdown-item" href="#order-options">Order Options</a></li>
+                            <li><a class="dropdown-item" href="category.php">Food Categories</a></li>
+                            <!-- <li><a class="dropdown-item" href="#order-options">Order Options</a></li> -->
                         </ul>
                     </li>
                     <li><button class="main-btn">+880 1234 000999</button></li>

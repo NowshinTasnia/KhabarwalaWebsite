@@ -89,6 +89,7 @@ h2 {
     line-height: 3rem;
 }
 
+
 h4 {
     color: var(--secondry-color);
     font-family: var(--secondry-font);
@@ -179,6 +180,7 @@ header design
 .header{
     position: absolute;
     background-color: var(--white-color);
+    padding-bottom: 1rem;
 }
 
 .navigation-wrap {
@@ -346,6 +348,7 @@ explore food section Design
 .explore-food .card img {
     border-radius: 0.9375rem;
     object-fit: cover;
+    height: inherit;
 }
 
 .explore-food .card span {
@@ -623,7 +626,7 @@ ul {
 .food-menu-img {
     width: 400px;
     height: 250px;
-    float: left;
+    float: unset;
     overflow: hidden;
     border-radius: 10px;
 }
@@ -675,4 +678,73 @@ ul {
     font-size: 1rem;
     border: none;
     border-radius: 5px;
+}
+
+/* CSS for Category Section */
+/* 
+.food-category {
+    background-color: var(--white-color);
+    padding: 4% 0;
+}
+
+.food-category .box-container{
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+
+ .food-category .box-container .box{
+    border: var(--black-color);
+    padding: 2rem;
+    text-align: center;
+ }
+
+  .food-category .box-container .box img{
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+  } */
+
+.food-category {
+    background-color: var(--white-color);
+    padding: 4% 0;
+}
+
+.food-category .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 1.5rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.food-category .box-container .box {
+    background-color: var(--light-gray);
+    border: 1px solid var(--black-color);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.food-category .box-container .box:hover {
+    transform: scale(1.05);
+}
+
+.food-category .box-container .box img {
+    width: 100%;
+    height: auto;
+    max-width: 10rem;
+    max-height: 10rem;
+    object-fit: contain;
+    margin-bottom: 1rem;
+}
+
+.food-category .box-container .box h4 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: var(--dark-text);
+    text-transform: capitalize;
 }
