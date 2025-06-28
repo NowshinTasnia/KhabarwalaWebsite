@@ -1,63 +1,206 @@
--- Create tbl_admin
-CREATE TABLE tbl_admin (
-    id INT(10) PRIMARY KEY AUTO_INCREMENT,
-    full_name VARCHAR(100),
-    username VARCHAR(100),
-    password VARCHAR(255)
-);
+-- phpMyAdmin SQL Dump
+-- version 5.2.0
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Jun 28, 2022 at 05:15 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
--- Create tbl_category
-CREATE TABLE tbl_category (
-    id INT(10) PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(100),
-    image_name VARCHAR(255),
-    featured VARCHAR(10),
-    active VARCHAR(10)
-);
-
--- Create tbl_order
-CREATE TABLE tbl_order (
-    id INT(10) PRIMARY KEY AUTO_INCREMENT,
-    food VARCHAR(150),
-    price VARCHAR(255),
-    qty DECIMAL(10,2),
-    total VARCHAR(255),
-    order_date INT(10),
-    status VARCHAR(10),
-    customer_name VARCHAR(10),
-    customer_contact VARCHAR(10),
-    customer_email VARCHAR(10),
-    customer_address VARCHAR(10)
-);
-
--- Create tbl_food
-CREATE TABLE tbl_food (
-    id INT(10) PRIMARY KEY AUTO_INCREMENT,
-    title VARCHAR(150),
-    description VARCHAR(255),
-    price DECIMAL(10,2),
-    image_name VARCHAR(255),
-    category_id INT(10),
-    featured VARCHAR(10),
-    active VARCHAR(10)
-);
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
--- Insert into tbl_admin
-INSERT INTO tbl_admin (full_name, username, password) VALUES
-('Admin User', 'admin', 'admin123');
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
--- Insert into tbl_category
-INSERT INTO tbl_category (title, image_name, featured, active) VALUES
-('Burgers', 'burgers.jpg', 'Yes', 'Yes'),
-('Pizzas', 'pizzas.jpg', 'Yes', 'Yes');
+--
+-- Database: `food_db`
+--
 
--- Insert into tbl_food
-INSERT INTO tbl_food (title, description, price, image_name, category_id, featured, active) VALUES
-('Cheeseburger', 'A delicious cheeseburger', 5.99, 'cheeseburger.jpg', 1, 'Yes', 'Yes'),
-('Margherita Pizza', 'Classic Margherita Pizza', 8.99, 'margherita.jpg', 2, 'Yes', 'Yes');
+-- --------------------------------------------------------
 
--- Insert into tbl_order
-INSERT INTO tbl_order (food, price, qty, total, order_date, status, customer_name, customer_contact, customer_email, customer_address) VALUES
->>>>>>> 06e69094460aec87bdfe51d6617d8802808db896
-('Cheeseburger', '5.99', 2, '11.98', UNIX_TIMESTAMP(), 'Delivered', 'John Doe', '1234567890', 'john@example.com', '123 Main St');
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(100) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`id`, `name`, `password`) VALUES
+(1, 'admin', '6216f8a75fd5bb3d5f22b6f9958cdede3fc086c2');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `id` int(100) NOT NULL,
+  `user_id` int(100) NOT NULL,
+  `pid` int(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `price` int(10) NOT NULL,
+  `quantity` int(10) NOT NULL,
+  `image` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `messages`
+--
+
+CREATE TABLE `messages` (
+  `id` int(100) NOT NULL,
+  `user_id` int(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `number` varchar(12) NOT NULL,
+  `message` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `orders`
+--
+
+CREATE TABLE `orders` (
+  `id` int(100) NOT NULL,
+  `user_id` int(100) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `number` varchar(10) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `method` varchar(50) NOT NULL,
+  `address` varchar(500) NOT NULL,
+  `total_products` varchar(1000) NOT NULL,
+  `total_price` int(100) NOT NULL,
+  `placed_on` date NOT NULL DEFAULT current_timestamp(),
+  `payment_status` varchar(20) NOT NULL DEFAULT 'pending'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `products`
+--
+
+CREATE TABLE `products` (
+  `id` int(100) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `category` varchar(100) NOT NULL,
+  `price` int(10) NOT NULL,
+  `image` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(100) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `number` varchar(10) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `address` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `cart`
+--
+ALTER TABLE `cart`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `messages`
+--
+ALTER TABLE `messages`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `orders`
+--
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `products`
+--
+ALTER TABLE `products`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `cart`
+--
+ALTER TABLE `cart`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `messages`
+--
+ALTER TABLE `messages`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `orders`
+--
+ALTER TABLE `orders`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `products`
+--
+ALTER TABLE `products`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
